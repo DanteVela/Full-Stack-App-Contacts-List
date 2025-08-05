@@ -25,7 +25,7 @@ const ContactForm = ( existingContact = {}, updateCallback) => {
         const url = "http://127.0.0.1:5000/" + (updating ? `update_contact/${existingContact.id}`: "create_contact")
         const options = {
             // Specify the method options unless its a GET Request (Automatically)
-            method: "POST",
+            method: updating ? "PATCH": "POST",
 
             // So the API knows we have JSON data to submit
             headers: {
@@ -74,7 +74,7 @@ const ContactForm = ( existingContact = {}, updateCallback) => {
             />
         </div>
         {/* On Submit go back to onSubmit Function */}
-        <button type = "submit">Create Contact</button>
+        <button type = "submit">{updating ? "Update": "Create"}</button>
     </form>
 }
 

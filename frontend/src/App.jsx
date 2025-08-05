@@ -9,6 +9,7 @@ import ContactForm from './ContactForm'
 function App() {
   const [contacts, setContacts] = useState([])
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [currentContact, setCurrentContact] = useState({})
 
   useEffect(() => {
     fetchContacts()
@@ -30,7 +31,11 @@ function App() {
 
   // Close Modal Function
   const closeModal = () => {
+    // Close the Modal
     setIsModalOpen(false)
+
+    // Set current contact to empty object
+    setCurrentContact({})
   }
 
   // Open Modal Function when Creating or Editing a Contact
@@ -38,14 +43,34 @@ function App() {
     if(!isModalOpen)  setIsModalOpen(true)
   }
 
+  // Edit Modal Function
+  const openEditModal = (contact) => {
+    // If its open, then return
+    if(isModalOpen)  return
+
+    // Otherwise set the current contact
+    setCurrentContact(contact)
+
+    // Open the Modal
+    setIsModalOpen(true)
+  }
+
+  const onUpdate = () => {
+    // Close Modal
+    closeModal()
+
+    // Fetch again in case of contact update
+    fetchContacts()
+  }
+
   return (
     <>
-      <ContactList contacts = {contacts} />
+      <ContactList contacts = {contacts} updateContact = {openEditModal} updateCallback = {onUpdate} />
       <button onClick = {openCreateModal}>Create New Contact</button>
       { isModalOpen && <div className = 'modal'>
         <div className = 'modal-content'>
           <span className = 'close' onClick={closeModal}>&times;</span>
-          <ContactForm />
+          <ContactForm existingContact = {currentContact} updateCallback = {onUpdate} />
         </div>
       </div>
       }
