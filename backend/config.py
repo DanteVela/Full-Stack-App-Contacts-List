@@ -1,4 +1,4 @@
-# config.py
+# config.py (Built First)
 # Main configuration of our application
 # -------------------------------------------------------------------------------------------------------------------------------
 # Building the API:

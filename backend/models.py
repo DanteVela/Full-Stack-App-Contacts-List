@@ -1,4 +1,4 @@
-# models.py
+# models.py (Built Second)
 # Interacts with Database, uses Flask and SQLAlchemy within a Python Class
 # -------------------------------------------------------------------------------------------------------------------------------
 # Relative import - Instance access to SQLAlchemy
