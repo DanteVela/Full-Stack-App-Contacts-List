@@ -6,7 +6,7 @@ from config import db
 
 # Inherit Database Model as a Python Class
 class Contact(db.Model):
-    # Always need an "id" for ALL Database Instances
+    # Always need an "id" for ALL Database Instances (Auto Generated)
     # primary_key (True): Must be unique in every entry of Database
     id = db.Column(db.Integer, primary_key = True)
 
