@@ -3,9 +3,9 @@ import { useState } from "react"
 
 const ContactForm = ( existingContact = {}, updateCallback) => {
     // Store the contents of a Contact
-    const [firstName, setFirstName] = useState(existingContact.firstName || "")
-    const [lastName, setLastName] = useState(existingContact.lastName || "")
-    const [email, setEmail] = useState(existingContact.email || "")
+    const [firstName, setFirstName] = useState(existingContact.firstName || "");
+    const [lastName, setLastName] = useState(existingContact.lastName || "");
+    const [email, setEmail] = useState(existingContact.email || "");
 
     // At least one contact exists: Update | Otherwise: Create a new contact
     const updating = Object.entries(existingContact).length !== 0
@@ -74,7 +74,7 @@ const ContactForm = ( existingContact = {}, updateCallback) => {
             />
         </div>
         {/* On Submit go back to onSubmit Function */}
-        <button type = "submit">{updating ? "Update": "Create"}</button>
+        <button type = "submit">{updating ? "Update" : "Create"}</button>
     </form>
 }
 
