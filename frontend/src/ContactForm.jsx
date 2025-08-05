@@ -1,11 +1,14 @@
 // Create a Form
 import { useState } from "react"
 
-const ContactForm = () => {
+const ContactForm = ( existingContact = {}, updateCallback) => {
     // Store the contents of a Contact
-    const [firstName, setFirstName] = useState("")
-    const [lastName, setLastName] = useState("")
-    const [email, setEmail] = useState("")
+    const [firstName, setFirstName] = useState(existingContact.firstName || "")
+    const [lastName, setLastName] = useState(existingContact.lastName || "")
+    const [email, setEmail] = useState(existingContact.email || "")
+
+    // At least one contact exists: Update | Otherwise: Create a new contact
+    const updating = Object.entries(existingContact).length !== 0
 
     // onSubmit Function for Create Button
     const onSubmit = async (e) => {
@@ -19,7 +22,7 @@ const ContactForm = () => {
             lastName,
             email
         }
-        const url = "http://127.0.0.1:5000/create_contact"
+        const url = "http://127.0.0.1:5000/" + (updating ? `update_contact/${existingContact.id}`: "create_contact")
         const options = {
             // Specify the method options unless its a GET Request (Automatically)
             method: "POST",
@@ -42,6 +45,7 @@ const ContactForm = () => {
             alert(data.message)
         } else {
             // Successful
+            updateCallback()
         }
     }
 

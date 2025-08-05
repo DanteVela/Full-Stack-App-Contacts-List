@@ -25,7 +25,7 @@ function App() {
     setContacts(data.contacts)
     
     // To see the Data
-    console.log(data.contacts)
+    // console.log(data.contacts)
   }
 
   // Close Modal Function
