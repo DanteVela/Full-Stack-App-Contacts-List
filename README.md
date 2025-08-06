@@ -23,10 +23,30 @@ npm run dev
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
+<!-- markdownlint-disable MD033 -->
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img
+    src="https://logos-world.net/wp-content/uploads/2021/10/Python-Symbol.png"
+    width="600"
+    height="300"
+    alt="Python Logo"
+    style="margin-right: 20px;"
+  >
+  <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpuYdLEzBvwemix8pwsncUkLLOQqnByncadg&s"
+    width="300"
+    height="300"
+    alt="JavaScript Logo"
+  >
+</div>
+<!-- markdownlint-enable MD033 -->
+
+<!--
 <p align="center">
   <img src="https://logos-world.net/wp-content/uploads/2021/10/Python-Symbol.png" width="600" height="300" alt="Python Logo">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpuYdLEzBvwemix8pwsncUkLLOQqnByncadg&s" width="300" height="300" alt="JavaScript Logo">
 </p>
+-->
 
 > On the backend, Flask and SQLAlchemy in Python expose RESTful CRUD endpoints for a contacts database, while JavaScript React components on the frontend consume those APIs to display and manage the contacts list.
 
