@@ -1,25 +1,25 @@
 # Python + JavaScript: Full Stack App (Contacts List)
 
-Quick Setup Process:
-npm create vite@latest frontend -- --template react
-cd backend
-pip install Flask
-pip install Flask-SQLAlchemy
-pip install flask-cors
-or
-python -m pip install `<package-name>`
+Quick Setup Process:  
+npm create vite@latest frontend -- --template react  
+cd backend  
+pip install Flask  
+pip install Flask-SQLAlchemy  
+pip install flask-cors  
+or  
+python -m pip install `<package-name>`  
 
 -----------------------------------------------------------------------------------------------------------------------------------------
-To Test for Full-Stack:
-Split Terminal into 2 (cmd Terminals)
+To Test for Full-Stack:  
+Split Terminal into 2 (cmd Terminals)  
 
-Database Testing:
-cd backend
-python main.py
+Database Testing:  
+cd backend  
+python main.py  
 
-API application Testing:
-cd frontend
-npm run dev
+API application Testing:  
+cd frontend  
+npm run dev  
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
