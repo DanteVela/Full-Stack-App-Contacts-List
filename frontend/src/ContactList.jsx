@@ -1,7 +1,7 @@
 // Component for Rendering Contacts
 import React from "react"
 
-const ContactList = ({contacts, updateContact, updateCallback}) => {
+const ContactList = ({ contacts, updateContact, updateCallback }) => {
     const onDelete = async (id) => {
         try {
             const options = {
@@ -12,10 +12,10 @@ const ContactList = ({contacts, updateContact, updateCallback}) => {
 
             // If successful, update contact list
             // Otherwise, catch the error and alert
-            if(response.status === 200) {
+            if (response.status === 200) {
                 updateCallback()
             } else {
-                console.error("Failed to Delete")
+                console.error("Failed to delete")
             }
         } catch (error) {
             alert(error)
@@ -36,13 +36,13 @@ const ContactList = ({contacts, updateContact, updateCallback}) => {
             <tbody>
                 {/* Dynamic Rendering for All Table Rows of Different Contacts */}
                 {contacts.map((contact) => (
-                    <tr key = {contact.id}>
+                    <tr key={contact.id}>
                         <td>{contact.firstName}</td>
                         <td>{contact.lastName}</td>
                         <td>{contact.email}</td>
                         <td>
-                            <button onClick = {() => updateContact(contact)}>Update</button>
-                            <button onClick = {() => onDelete(contact.id)}>Delete</button>
+                            <button onClick={() => updateContact(contact)}>Update</button>
+                            <button onClick={() => onDelete(contact.id)}>Delete</button>
                         </td>
                     </tr>
                 ))}
