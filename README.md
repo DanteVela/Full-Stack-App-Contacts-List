@@ -23,23 +23,18 @@ npm run dev
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
-<!-- markdownlint-disable MD033 -->
-<div style="display: flex; justify-content: center; align-items: center;">
+<p align="center">
   <img
     src="https://logos-world.net/wp-content/uploads/2021/10/Python-Symbol.png"
-    width="600"
-    height="300"
     alt="Python Logo"
-    style="margin-right: 20px;"
-  >
+    width="250"
+  />
   <img
     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpuYdLEzBvwemix8pwsncUkLLOQqnByncadg&s"
-    width="300"
-    height="300"
     alt="JavaScript Logo"
-  >
-</div>
-<!-- markdownlint-enable MD033 -->
+    width="200"
+  />
+</p>
 
 <!--
 <p align="center">
