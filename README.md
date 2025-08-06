@@ -144,6 +144,6 @@ Helpful links that you can use with your project:
 
 ## Licensing
 
-[![License](https://img.shields.io/static/v1?label=License&message=All%20Rights%20Reserved&color=lightgrey&style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](LICENSE)
 
-"The project is licensed under Custom Proprietary License ("All Rights Reserved") v1.0"
+"The project is licensed under MIT license."
