@@ -152,4 +152,4 @@ Helpful links that you can use with your project:
 
 [![License](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](LICENSE)
 
-"The project is licensed under MIT license."
+"The project is licensed under MIT license".
