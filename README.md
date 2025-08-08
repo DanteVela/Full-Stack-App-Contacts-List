@@ -132,8 +132,6 @@ This project repo has the following:
   - ESLint and Prettier setup to enforce code style and consistency
   - Environment variable management for API URLs
 
-- (To be continued)...
-
 ## Links
 
 Helpful links that you can use with your project:
